@@ -3190,6 +3190,10 @@ used in my-page
     display: flex;
 }
 
+.p-footer__logo__wrapper div {
+    margin-left: 0.5rem;
+}
+
 .p-footer__logo__wrapper div>span {
     color: #515151;
     font-size: 1.1rem;
@@ -3209,7 +3213,7 @@ used in my-page
     width: 2.5rem;
 }
 
-.p-footer__nav-sns>picture>img {
+.p-footer__nav-sns a>picture>img {
     width: 3rem;
 }
 
@@ -7599,12 +7603,12 @@ used in my-page
     }
 
     .p-footer__logo__wrapper div>span {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .p-footer__logo__wrapper div>span:last-child {
-        font-size: 0.9rem;
-        letter-spacing: 0.66rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.55rem;
     }
     
     .p-footer__logo__wrapper>picture>img {
