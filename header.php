@@ -34,10 +34,17 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title('｜', true, 'right');
-            ?><?php bloginfo('name');
-                ?></title>
-
+    <title><?php wp_title('｜', true, 'right'); ?><?php bloginfo('name'); ?></title>
+    <?php
+    $custom_css = get_field('custom_css');
+    if (!empty($custom_css)):
+    ?>
+        <style>
+            <?= esc_html($custom_css) ?>
+        </style>
+    <?php
+    endif;
+    ?>
     <?php wp_head(); ?>
 </head>
 
