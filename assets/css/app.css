@@ -3214,6 +3214,7 @@ used in my-page
 }
 
 .p-footer__nav-sns{
+    display: flex;
     padding-top: 0.5rem;
     gap: 1rem;
 }
