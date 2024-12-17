@@ -3314,6 +3314,9 @@ used in my-page
 
 .p-footer__nav-menu__main {
     margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    gap: 5rem;
+    height: 2rem;
 }
 
 .p-footer__nav-menu__main__item>a {
@@ -7657,6 +7660,7 @@ used in my-page
 
     .p-footer__nav-menu__main {
         margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .p-news__search>form>input {
