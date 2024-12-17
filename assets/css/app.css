@@ -7615,6 +7615,10 @@ used in my-page
         width: 5rem;
     }
 
+    .p-footer__nav-sns a>picture>img {
+        width: 5rem;
+    }
+    
     .p-footer__nav-link__outer {
         display: -webkit-box;
         display: -ms-flexbox;
