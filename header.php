@@ -63,9 +63,8 @@
                                 alt="OSCSS LOGO">
                         </picture>
                         <h1>
-                            <span>休眠預金活用</span>
-                            <span>プラットフォーム</span>
-                            <span>Kyu-Plat</span>
+                            <span>HIROFUMI KURUMA</span>
+                            <span>GA4コンサルタント</span>
                         </h1>
                     </div>
                 </a>
@@ -77,11 +76,17 @@
                 <nav class="js-header-menu p-header__nav">
                     <div class="p-header__nav__wrapper">
                         <ul class="p-header__menu">
-                            <li class="p-header__menu__item<?= esc_attr($kouboActive) ?>">
-                                <a href="<?= esc_url(home_url('/')) ?>">TEST</a>
+                            <li class="p-header__menu__item">
+                                <a href="<?= esc_url(home_url('profile/')) ?>">プロフィール</a>
                             </li>
-                            <li class="p-header__menu__item<?= esc_attr($learningActive) ?>">
-                                <a href="<?= esc_url(home_url('blog/')) ?>">TEST</a>
+                            <li class="p-header__menu__item">
+                                <a href="<?= esc_url(home_url('blog/')) ?>">オスカーの学習帳</a>
+                            </li>
+                            <li class="p-header__menu__item">
+                                <a href="<?= esc_url(home_url('contact/')) ?>">お問い合わせ</a>
+                            </li>
+                            <li class="p-header__menu__item">
+                                <a href="<?= esc_url(home_url('download/')) ?>">ダウンロード</a>
                             </li>
                         </ul>
                     </div>
