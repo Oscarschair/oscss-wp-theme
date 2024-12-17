@@ -2912,7 +2912,7 @@ used in my-page
 }
 
 .p-header__logo__wrapper>picture>img {
-    width: 6.335rem;
+    width: 4rem;
 }
 
 .p-header__logo__wrapper h1 {
@@ -2932,10 +2932,6 @@ used in my-page
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.675px;
-}
-
-.p-header__logo__wrapper h1>span:nth-child(2) {
-    letter-spacing: 1.08px;
 }
 
 .p-header__logo__wrapper h1>span:last-child {
@@ -7385,13 +7381,9 @@ used in my-page
         font-size: 1.125rem;
     }
 
-    .p-header__logo__wrapper h1>span:nth-child(2) {
-        letter-spacing: 1.44px;
-    }
-
     .p-header__logo__wrapper h1>span:last-child {
         font-size: 0.6875rem;
-        letter-spacing: 0.825rem;
+        letter-spacing: 0.59rem;
     }
 
     .p-header__mobile-nav {
@@ -8927,7 +8919,7 @@ used in my-page
 
 @media (max-width: 1023px) {
     .p-header__logo__wrapper>picture>img {
-        width: 4.25rem;
+        width: 3.25rem;
     }
 
     .p-header__nav {
