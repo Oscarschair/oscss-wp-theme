@@ -1,7 +1,7 @@
     <footer class="l-footer">
         <div class="l-footer__wrapper">
             <nav class="p-footer__nav-menu">
-                <div class="p-footer__nav-link__inner">
+                <div class="p-footer__nav-link__left">
                     <a class="p-footer__logo" href="<?= home_url() ?>">
                         <div class="p-footer__logo__wrapper">
                             <picture>
