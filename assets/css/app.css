@@ -2928,7 +2928,7 @@ used in my-page
 
 .p-header__logo__wrapper h1>span {
     color: #515151;
-    font-size: 0.844125rem;
+    font-size: 1.1rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0.675px;
@@ -2936,9 +2936,9 @@ used in my-page
 
 .p-header__logo__wrapper h1>span:last-child {
     font-family: Outfit;
-    font-size: 0.515875rem;
+    font-size: 0.7rem;
     font-weight: 600;
-    letter-spacing: 0.619rem;
+    letter-spacing: 0.555rem;
 }
 
 .p-header__mobile-nav>a {
@@ -7378,12 +7378,12 @@ used in my-page
     }
 
     .p-header__logo__wrapper h1>span {
-        font-size: 1.125rem;
+        font-size: 1.4rem;
     }
 
     .p-header__logo__wrapper h1>span:last-child {
-        font-size: 0.6875rem;
-        letter-spacing: 0.59rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.66rem;
     }
 
     .p-header__mobile-nav {
