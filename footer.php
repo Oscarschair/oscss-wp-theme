@@ -1,6 +1,18 @@
     <footer class="l-footer">
         <div class="l-footer__wrapper">
             <nav class="p-footer__nav-menu">
+                <a class="p-header__logo" href="<?= home_url() ?>">
+                    <div class="p-header__logo__wrapper">
+                        <picture>
+                            <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg"
+                                alt="OSCSS LOGO">
+                        </picture>
+                        <h1>
+                            <span>HIROFUMI KURUMA</span>
+                            <span>GA4コンサルタント</span>
+                        </h1>
+                    </div>
+                </a>
                 <ul class="list-inline">
                     <li class="list-inline-item">
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/Oscarschair"
