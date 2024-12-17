@@ -7635,7 +7635,7 @@ used in my-page
         gap: 2rem;
     }
 
-    .p-footer__nav-link__inner {
+    .p-footer__nav-link__left {
         width: 25%;
     }
 
