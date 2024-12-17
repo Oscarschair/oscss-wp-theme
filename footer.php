@@ -4,17 +4,27 @@
                 <ul class="list-inline">
                     <li class="list-inline-item">
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/Oscarschair"
-                            aria-label="Github"><i class="fab fa-github-square" aria-hidden="true"
-                                title="Github"></i></a>
+                            aria-label="Github">
+                            <picture>
+                                <img src="<?= get_template_directory_uri() ?>/assets/svg/github.svg" alt="OSCSS LOGO">
+                            </picture>
+                        </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ChairOscar"
-                            aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true" title="Twitter"></i></a>
+                            aria-label="Twitter">
+                            <picture>
+                                <img src="<?= get_template_directory_uri() ?>/assets/svg/x.svg" alt="OSCSS LOGO">
+                            </picture>
+                        </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.chatwork.com/osc6133"
-                            aria-label="Chatwork"><img src="/application/files/3216/5036/2875/chatwork_logo.png"
-                                width="27" height="27" style="top:-6px;left:-6px;position:relative;"></a>
+                            aria-label="Chatwork">
+                            <picture>
+                                <img src="<?= get_template_directory_uri() ?>/assets/svg/chatwork.svg" alt="OSCSS LOGO">
+                            </picture>
+                        </a>
                     </li>
                 </ul>
                 <ul class="p-footer__nav-menu__main">
