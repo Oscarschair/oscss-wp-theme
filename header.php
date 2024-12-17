@@ -59,7 +59,8 @@
                 <a class="p-header__logo" href="<?= home_url() ?>">
                     <div class="p-header__logo__wrapper">
                         <picture>
-                            <img src="<?= get_template_directory_uri() ?>assets/svg/favicon-trans.svg" alt="OSCSS LOGO">
+                            <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg"
+                                alt="OSCSS LOGO">
                         </picture>
                         <h1>
                             <span>休眠預金活用</span>
