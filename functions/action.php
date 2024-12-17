@@ -181,3 +181,11 @@ function the_breadcrumb()
 
     echo '</nav>';
 }
+
+if (!is_admin()) {
+    add_action('init', function () {
+        if (is_user_logged_in()) {
+            show_admin_bar(true); // 管理バーを強制的に表示
+        }
+    });
+}
