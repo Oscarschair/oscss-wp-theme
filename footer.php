@@ -43,7 +43,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="p-footer__nav-link__inner">
+                <div class="p-footer__nav-link__right">
                     <ul class="p-footer__nav-menu__main">
                         <li class="p-footer__nav-menu__main__item">
                             <a href="https://stg.oscarchair.jp/profile/">プロフィール</a>

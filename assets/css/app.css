@@ -3297,7 +3297,7 @@ used in my-page
     padding: 0 0 2.5rem;
 }
 
-.p-footer__nav-menu ul {
+.p-footer__nav-link__right ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3306,7 +3306,7 @@ used in my-page
     justify-content: center;
 }
 
-.p-footer__nav-menu ul>li {
+.p-footer__nav-link__right ul>li {
     font-size: 0.875rem;
     line-height: 1.225rem;
 }
@@ -6961,7 +6961,7 @@ used in my-page
         padding-right: 1rem;
     }
 
-    .p-footer__nav-menu ul {
+    .p-footer__nav-link__right ul {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
