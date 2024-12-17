@@ -70,7 +70,7 @@
                 </a>
                 <nav class="p-header__mobile-nav">
                     <a class="js-mobile-menu" href="#">
-                        <img src="<?= get_template_directory_uri() ?>/assets/svg/menu-icon.svg" alt="Menu icon">メニュー
+                        <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="Menu icon">メニュー
                     </a>
                 </nav>
                 <nav class="js-header-menu p-header__nav">
