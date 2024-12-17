@@ -3186,6 +3186,10 @@ used in my-page
     text-decoration: none;
 }
 
+.p-footer__logo__wrapper {
+    display: flex;
+}
+
 .p-footer__logo__wrapper h1>span {
     color: #515151;
     font-size: 1.1rem;
