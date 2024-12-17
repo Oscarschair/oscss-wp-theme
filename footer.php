@@ -2,8 +2,8 @@
         <div class="l-footer__wrapper">
             <nav class="p-footer__nav-menu">
                 <div class="p-footer__nav-link__inner">
-                    <a class="p-header__logo" href="<?= home_url() ?>">
-                        <div class="p-header__logo__wrapper">
+                    <a class="p-footer__logo" href="<?= home_url() ?>">
+                        <div class="p-footer__logo__wrapper">
                             <picture>
                                 <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg"
                                     alt="OSCSS LOGO">
@@ -14,8 +14,8 @@
                             </h1>
                         </div>
                     </a>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
+                    <ul class="p-footer__nav-sns">
+                        <li class="p-footer__nav-sns__item">
                             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Oscarschair"
                                 aria-label="Github">
                                 <picture>
@@ -24,7 +24,7 @@
                                 </picture>
                             </a>
                         </li>
-                        <li class="list-inline-item">
+                        <li class="p-footer__nav-sns__item">
                             <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ChairOscar"
                                 aria-label="Twitter">
                                 <picture>
@@ -32,7 +32,7 @@
                                 </picture>
                             </a>
                         </li>
-                        <li class="list-inline-item">
+                        <li class="p-footer__nav-sns__item">
                             <a target="_blank" rel="noopener noreferrer" href="https://www.chatwork.com/osc6133"
                                 aria-label="Chatwork">
                                 <picture>

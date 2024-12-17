@@ -3181,6 +3181,19 @@ used in my-page
     line-height: 1.35rem;
 }
 
+.p-footer__logo {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.p-footer__logo__wrapper>picture>img {
+    width: 2.5rem;
+}
+
+.p-footer__nav-sns>picture>img {
+    width: 3rem;
+}
+
 .p-footer__nav-link__outer {
     margin-bottom: 2.5rem;
 }
@@ -3252,6 +3265,7 @@ used in my-page
 }
 
 .p-footer__nav-menu {
+    display: flex;
     padding: 0 0 2.5rem;
 }
 
@@ -7563,6 +7577,10 @@ used in my-page
 
     .p-topbar__logout-button {
         padding: 0.5rem 2rem 0.5rem 0.4375rem;
+    }
+
+    .p-footer__logo__wrapper>picture>img {
+        width: 3rem;
     }
 
     .p-footer__nav-link__outer {
