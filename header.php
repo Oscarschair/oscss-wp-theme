@@ -15,20 +15,20 @@
 <head>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -39,9 +39,9 @@
     $custom_css = get_field('custom_css');
     if (!empty($custom_css)):
     ?>
-        <style>
-            <?= esc_html($custom_css) ?>
-        </style>
+    <style>
+    <?=esc_html($custom_css) ?>
+    </style>
     <?php
     endif;
     ?>
@@ -53,3 +53,38 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-xxxxxxxx" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <header class="l-header">
+        <div class="l-header__outer">
+            <div class="l-header__inner">
+                <a class="p-header__logo" href="<?= home_url() ?>">
+                    <div class="p-header__logo__wrapper">
+                        <picture>
+                            <img src="<?= get_template_directory_uri() ?>/assets/svg/janpia-logo.svg" alt="JANPIA logo">
+                        </picture>
+                        <h1>
+                            <span>休眠預金活用</span>
+                            <span>プラットフォーム</span>
+                            <span>Kyu-Plat</span>
+                        </h1>
+                    </div>
+                </a>
+                <nav class="p-header__mobile-nav">
+                    <a class="js-mobile-menu" href="#">
+                        <img src="<?= get_template_directory_uri() ?>/assets/svg/menu-icon.svg" alt="Menu icon">メニュー
+                    </a>
+                </nav>
+                <nav class="js-header-menu p-header__nav">
+                    <div class="p-header__nav__wrapper">
+                        <ul class="p-header__menu">
+                            <li class="p-header__menu__item<?= esc_attr($kouboActive) ?>">
+                                <a href="<?= esc_url(home_url('/')) ?>">TEST</a>
+                            </li>
+                            <li class="p-header__menu__item<?= //esc_attr($learningActive) ?>">
+                                <a href="<?= esc_url(home_url('blog/')) ?>">TEST</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
