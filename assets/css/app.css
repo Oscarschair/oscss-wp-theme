@@ -3304,7 +3304,6 @@ used in my-page
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 1rem;
 }
 
 .p-footer__nav-menu ul>li {
@@ -7653,10 +7652,6 @@ used in my-page
 
     .p-footer__nav-link__inner__wrapper>.l-footer__nav-link__list {
         width: 50%;
-    }
-
-    .p-footer__nav-menu ul {
-        gap: 3.125rem;
     }
 
     .p-footer__nav-menu__main {
