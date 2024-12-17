@@ -31,12 +31,18 @@
         })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
     </script>
     <!-- End Google Tag Manager -->
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php wp_title('｜', true, 'right');
+            ?><?php bloginfo('name');
+                ?></title>
 
     <?php wp_head(); ?>
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-xxxxxxxx" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript> -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-xxxxxxxx" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
