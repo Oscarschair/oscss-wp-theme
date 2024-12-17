@@ -7640,8 +7640,8 @@ used in my-page
         width: 25%;
     }
 
-    .p-footer__nav-link__inner--one-half {
-        width: 50%;
+    .p-footer__nav-link__right {
+        width: 75%;
     }
 
     .p-footer__nav-link__inner__wrapper {
