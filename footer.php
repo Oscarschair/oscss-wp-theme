@@ -144,7 +144,7 @@
             </nav>
         </div>
         <div class="p-copyright">
-            <p>&copy; 2024 JANPIA All rights reserved.</p>
+            <p>&copy; 2024 HIROFUMI KURUMA All rights reserved.</p>
         </div>
     </footer>
     <?php wp_footer(); ?>

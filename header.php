@@ -59,7 +59,7 @@
                 <a class="p-header__logo" href="<?= home_url() ?>">
                     <div class="p-header__logo__wrapper">
                         <picture>
-                            <img src="<?= get_template_directory_uri() ?>/assets/svg/janpia-logo.svg" alt="JANPIA logo">
+                            <img src="<?= get_template_directory_uri() ?>assets/svg/favicon-trans.svg" alt="OSCSS LOGO">
                         </picture>
                         <h1>
                             <span>休眠預金活用</span>
@@ -70,7 +70,7 @@
                 </a>
                 <nav class="p-header__mobile-nav">
                     <a class="js-mobile-menu" href="#">
-                        <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="Menu icon">メニュー
+                        <img src="<?= get_template_directory_uri() ?>/assets/svg/menu-icon.svg" alt="Menu icon">メニュー
                     </a>
                 </nav>
                 <nav class="js-header-menu p-header__nav">
