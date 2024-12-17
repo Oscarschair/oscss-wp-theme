@@ -8,10 +8,10 @@
                                 <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg"
                                     alt="OSCSS LOGO">
                             </picture>
-                            <h1>
+                            <div>
                                 <span>HIROFUMI KURUMA</span>
                                 <span>GA4コンサルタント</span>
-                            </h1>
+                            </div>
                         </div>
                     </a>
                     <ul class="p-footer__nav-sns">
