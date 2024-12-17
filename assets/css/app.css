@@ -3215,6 +3215,7 @@ used in my-page
 
 .p-footer__nav-sns{
     padding-top: 0.5rem;
+    gap: 1rem;
 }
     
 .p-footer__nav-sns a>picture>img {
@@ -7617,6 +7618,11 @@ used in my-page
     
     .p-footer__logo__wrapper>picture>img {
         width: 5rem;
+    }
+
+    .p-footer__nav-sns {
+        padding-top: 0.5rem;
+        gap: 1rem;
     }
 
     .p-footer__nav-sns a>picture>img {
