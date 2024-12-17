@@ -3213,6 +3213,10 @@ used in my-page
     width: 2.5rem;
 }
 
+.p-footer__nav-sns{
+    padding-top: 0.5rem;
+}
+    
 .p-footer__nav-sns a>picture>img {
     width: 3rem;
 }
@@ -7616,9 +7620,9 @@ used in my-page
     }
 
     .p-footer__nav-sns a>picture>img {
-        width: 5rem;
+        width: 2rem;
     }
-    
+
     .p-footer__nav-link__outer {
         display: -webkit-box;
         display: -ms-flexbox;
