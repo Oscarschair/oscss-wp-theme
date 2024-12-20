@@ -25,19 +25,7 @@ get_header();
             if ($query->have_posts()) :
                 while ($query->have_posts()) :
                     $query->the_post();
-            ?>
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                        <p class="post-meta">
-                            投稿日: <?php the_date(); ?> | カテゴリ: <?php the_category(', '); ?>
-                        </p>
-                        <div class="post-excerpt">
-                            <?php the_excerpt(); // 抜粋を表示 
-                            ?>
-                        </div>
-                        <a href="<?php the_permalink(); ?>" class="read-more">続きを読む</a>
-                    </article>
-                <?php
+                    get_template_part('template-parts/content', 'post'); // コンポーネントを呼び出す
                 endwhile;
 
                 // ページネーション
@@ -50,7 +38,7 @@ get_header();
 
                 wp_reset_postdata(); // クエリのリセット
             else :
-                ?>
+            ?>
                 <p>投稿がありません。</p>
             <?php
             endif;
