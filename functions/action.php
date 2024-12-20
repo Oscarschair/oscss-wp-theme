@@ -58,13 +58,15 @@ add_action('wp_enqueue_scripts', function () {
 
     // wp_enqueue_style('slick-css', $template_directory_uri . '/assets/libraries/slick/css/slick.css', [], '1.8.0');
     // wp_enqueue_style('slick-theme', $template_directory_uri . '/assets/libraries/slick/css/slick-theme.css', [], '1.8.0');
+    wp_enqueue_style('materialize-css', $template_directory_uri . '/assets/css/materialize.min.css', [], '1.0.0');
     wp_enqueue_style('app-css', $template_directory_uri . '/assets/css/app.css', [], time());
 
     // wp_enqueue_script('jquery-js', $template_directory_uri . '/assets/js/jquery.min.js', [], '3.7.1', true);
     // wp_enqueue_script('slick-js', $template_directory_uri . '/assets/libraries/slick/js/slick.min.js', ['jquery'], '1.8.0', true);
     // wp_enqueue_script('jquery-migrate-js', $template_directory_uri . '/assets/js/jquery-migrate.min.js', [], '3.4.1', true);
     // wp_enqueue_script('isotope-js', $template_directory_uri . '/assets/js/isotope.pkgd.min.js', [], '3.0.6', true);
-    // wp_enqueue_script('scripts-js', $template_directory_uri . '/assets/js/app.min.js', [], time(), true);
+    wp_enqueue_script('materialize-js', $template_directory_uri . '/assets/js/materialize.min.js', ['jquery'], '1.0.0', true);
+    wp_enqueue_script('scripts-js', $template_directory_uri . '/assets/js/app.js', [], time(), true);
 });
 
 
