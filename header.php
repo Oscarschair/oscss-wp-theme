@@ -53,44 +53,32 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-xxxxxxxx" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header class="l-header">
-        <div class="l-header__outer">
-            <div class="l-header__inner">
-                <a class="p-header__logo" href="<?= home_url() ?>">
-                    <div class="p-header__logo__wrapper">
-                        <picture>
-                            <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg"
-                                alt="OSCSS LOGO">
-                        </picture>
-                        <h1>
-                            <span>HIROFUMI KURUMA</span>
-                            <span>GA4コンサルタント</span>
-                        </h1>
-                    </div>
-                </a>
-                <nav class="p-header__mobile-nav">
-                    <a class="js-mobile-menu" href="#">
-                        <img src="<?= get_template_directory_uri() ?>/assets/svg/menu-icon.svg" alt="Menu icon">メニュー
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper container">
+                    <a href="<?= home_url() ?>" class="brand-logo">
+                        <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
+                            style="height: 56px; vertical-align: middle;">
+                        <span>HIROFUMI KURUMA</span>
                     </a>
-                </nav>
-                <nav class="js-header-menu p-header__nav">
-                    <div class="p-header__nav__wrapper">
-                        <ul class="p-header__menu">
-                            <li class="p-header__menu__item">
-                                <a href="<?= esc_url(home_url('profile/')) ?>">プロフィール</a>
-                            </li>
-                            <li class="p-header__menu__item">
-                                <a href="<?= esc_url(home_url('blog/')) ?>">オスカーの学習帳</a>
-                            </li>
-                            <li class="p-header__menu__item">
-                                <a href="<?= esc_url(home_url('contact/')) ?>">お問い合わせ</a>
-                            </li>
-                            <li class="p-header__menu__item">
-                                <a href="<?= esc_url(home_url('download/')) ?>">ダウンロード</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="<?= esc_url(home_url('profile/')) ?>">プロフィール</a></li>
+                        <li><a href="<?= esc_url(home_url('blog/')) ?>">オスカーの学習帳</a></li>
+                        <li><a href="<?= esc_url(home_url('contact/')) ?>">お問い合わせ</a></li>
+                        <li><a href="<?= esc_url(home_url('download/')) ?>">ダウンロード</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
+
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="<?= esc_url(home_url('profile/')) ?>">プロフィール</a></li>
+            <li><a href="<?= esc_url(home_url('blog/')) ?>">オスカーの学習帳</a></li>
+            <li><a href="<?= esc_url(home_url('contact/')) ?>">お問い合わせ</a></li>
+            <li><a href="<?= esc_url(home_url('download/')) ?>">ダウンロード</a></li>
+        </ul>
     </header>
