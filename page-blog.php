@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * Template Name: ブログ一覧
+ */
 get_header(); // ヘッダーを読み込む
 ?>
 
