@@ -357,7 +357,7 @@ body {
   text-decoration: underline;
 }
 
-.single-post__container {
+.single-post__wrapper {
   display: flex;
 }
 
