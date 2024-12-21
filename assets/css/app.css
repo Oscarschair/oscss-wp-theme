@@ -129,6 +129,7 @@ body {
   flex-basis: 70%;
   text-align: left;
   margin: 10px auto;
+  justify-items: center;
 }
 
 .footer__site-title-wrapper {
@@ -277,6 +278,10 @@ body {
   .footer__left,
   .footer__right {
     flex-basis: 50%;
+  }
+
+  .footer__left {
+    justify-items: unset;
   }
 
   .footer__menu-list,
