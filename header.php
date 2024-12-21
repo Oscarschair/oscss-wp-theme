@@ -59,11 +59,12 @@
                 <a href="<?= home_url() ?>" class="header__brand-logo">
                     <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
                         style="height: 56px; vertical-align: middle;">
+
+                    <div class="header__site-title">
+                        <span class="header__site-title--main">HIROFUMI KURUMA</span>
+                        <span class="header__site-title--sub">GA4コンサルタント</span>
+                    </div>
                 </a>
-                <div class="header__site-title">
-                    <span class="header__site-title--main">HIROFUMI KURUMA</span>
-                    <span class="header__site-title--sub">GA4コンサルタント</span>
-                </div>
             </h1>
 
             <div class="header__right">
