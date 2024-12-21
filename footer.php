@@ -1,70 +1,82 @@
-<?php
-
-/**
- * Footer Template
- */
-?>
-<footer class="footer">
-    <div class="container footer__container">
-        <div class="footer__left">
-            <a href="<?= home_url() ?>" class="brand-logo">
-                <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
-                    style="height: 56px; vertical-align: middle;">
-            </a>
-            <div class="footer__site-title">
-                <span class="footer__site-title--main">HIROFUMI KURUMA</span>
-                <span class="footer__site-title--sub">GA4コンサルタント</span>
-            </div>
-        </div>
-        <div class="footer__right">
-            <ul class="footer__sns-list">
-                <li class="footer__sns-item">
-                    <a href="https://www.facebook.com" class="footer__sns-link" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="<?= get_template_directory_uri() ?>/assets/icons/facebook.svg" alt="Facebook"
-                            class="footer__sns-icon">
+    <footer class="l-footer">
+        <div class="l-footer__wrapper">
+            <nav class="p-footer__nav-menu">
+                <div class="p-footer__nav-link__left">
+                    <a class="p-footer__logo" href="<?= home_url() ?>">
+                        <div class="p-footer__logo__wrapper">
+                            <picture>
+                                <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg"
+                                    alt="OSCSS LOGO">
+                            </picture>
+                            <div>
+                                <span>HIROFUMI KURUMA</span>
+                                <span>GA4コンサルタント</span>
+                            </div>
+                        </div>
                     </a>
-                </li>
-                <li class="footer__sns-item">
-                    <a href="https://www.twitter.com" class="footer__sns-link" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="<?= get_template_directory_uri() ?>/assets/icons/twitter.svg" alt="Twitter"
-                            class="footer__sns-icon">
-                    </a>
-                </li>
-                <li class="footer__sns-item">
-                    <a href="https://www.linkedin.com" class="footer__sns-link" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="<?= get_template_directory_uri() ?>/assets/icons/linkedin.svg" alt="LinkedIn"
-                            class="footer__sns-icon">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer__bottom">
-        <div class="footer__bottom-left">
-            <p class="footer__copyright">&copy; <?= date('Y') ?> HIROFUMI KURUMA. All Rights Reserved.</p>
-        </div>
-        <div class="footer__bottom-right">
-            <ul class="footer__links">
-                <li class="footer__link-item">
-                    <a href="<?= home_url('/terms') ?>" class="footer__link">利用規約</a>
-                </li>
-                <li class="footer__link-item">
-                    <a href="<?= home_url('/privacy-policy') ?>" class="footer__link">プライバシーポリシー</a>
-                </li>
-            </ul>
-            <nav class="footer__menu">
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'footer_menu',
-                    'container' => false,
-                    'menu_class' => 'footer__menu-list',
-                    'fallback_cb' => false,
-                ));
-                ?>
+                    <ul class="p-footer__nav-sns">
+                        <li class="p-footer__nav-sns__item">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Oscarschair"
+                                aria-label="Github">
+                                <picture>
+                                    <img src="<?= get_template_directory_uri() ?>/assets/svg/github.svg"
+                                        alt="OSCSS LOGO">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="p-footer__nav-sns__item">
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ChairOscar"
+                                aria-label="Twitter">
+                                <picture>
+                                    <img src="<?= get_template_directory_uri() ?>/assets/svg/x.svg" alt="OSCSS LOGO">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="p-footer__nav-sns__item">
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.chatwork.com/osc6133"
+                                aria-label="Chatwork">
+                                <picture>
+                                    <img src="<?= get_template_directory_uri() ?>/assets/svg/chatwork.svg"
+                                        alt="OSCSS LOGO">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-footer__nav-link__right">
+                    <ul class="p-footer__nav-menu__main">
+                        <li class="p-footer__nav-menu__main__item">
+                            <a href="https://stg.oscarchair.jp/profile/">プロフィール</a>
+                        </li>
+                        <li class="p-footer__nav-menu__main__item">
+                            <a href="https://stg.oscarchair.jp/blog/">オスカーの学習帳</a>
+                        </li>
+                        <li class="p-footer__nav-menu__main__item">
+                            <a href="https://stg.oscarchair.jp/contact/">お問い合わせ</a>
+                        </li>
+                        <li class="p-footer__nav-menu__main__item">
+                            <a href="https://stg.oscarchair.jp/download/">ダウンロード</a>
+                        </li>
+                    </ul>
+                    <ul class="p-footer__nav-menu__sub">
+                        <li>
+                            <a href="<?= home_url('/terms/') ?>">利用規約</a>
+                        </li>
+                        <li>
+                            <a href="<?= home_url('/privacy-policy/') ?>">プライバシーポリシー</a>
+                        </li>
+                        <li>
+                            <a href="<?= home_url('/accessibility-policy/') ?>">アクセシビリティ方針</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
-    </div>
-</footer>
+        <div class="p-copyright">
+            <p>&copy; 2024 HIROFUMI KURUMA All rights reserved.</p>
+        </div>
+    </footer>
+    <?php wp_footer(); ?>
+    </body>
+
+    </html>
