@@ -12,6 +12,8 @@
     /* 背景を透明に */
     z-index: 1000;
     /* 他の要素の上に表示 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* ヘッダーの下に影を追加 */
 }
 
 .header__container {
@@ -81,7 +83,7 @@ nav {
 }
 
 nav ul a:hover {
-    background-color: none !important;
+    background-color: transparent !important;
     border-bottom: 4px solid !important;
 }
 
