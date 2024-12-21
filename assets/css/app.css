@@ -29,6 +29,10 @@
     align-items: center;
 }
 
+.header__site-title-wrapper {
+    display: inline-flex;
+}
+
 .header__site-title {
     display: flex;
     flex-direction: column;
