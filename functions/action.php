@@ -5,13 +5,15 @@
  */
 
 
-function register_my_menus()
+// メニュー位置を登録
+function register_theme_menus()
 {
     register_nav_menus(array(
-        'header_menu' => __('Header Menu', 'oscss_wp_theme'),
+        'header_menu' => 'Header Menu', // 既存のヘッダーメニュー
+        'footer_menu' => 'Footer Menu', // フッターメニューを追加
     ));
 }
-add_action('init', 'register_my_menus');
+add_action('init', 'register_theme_menus');
 
 /**
  * Add MIME types.
