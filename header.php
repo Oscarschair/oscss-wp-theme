@@ -15,20 +15,20 @@
 <head>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -39,9 +39,9 @@
     $custom_css = get_field('custom_css');
     if (!empty($custom_css)):
     ?>
-    <style>
-    <?=esc_html($custom_css) ?>
-    </style>
+        <style>
+            <?= esc_html($custom_css) ?>
+        </style>
     <?php
     endif;
     ?>
@@ -54,8 +54,8 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header class="header">
-        <div class="container header__container row">
-            <h1 class="col s12 m6 header__site-title-wrapper">
+        <div class="container header__container">
+            <h1 class="header__left">
                 <a href="<?= home_url() ?>" class="brand-logo">
                     <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
                         style="height: 56px; vertical-align: middle;">
@@ -66,7 +66,7 @@
                 </div>
             </h1>
 
-            <div class="col s12 m6 header__menu-wrapper">
+            <div class="header__right">
                 <button class="header__menu-toggle" onclick="toggleMenu()">Menu</button>
                 <nav class="header__menu">
                     <?php
