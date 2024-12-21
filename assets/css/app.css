@@ -340,18 +340,25 @@ body {
   padding-top: 20px;
   border-top: 1px solid #e0e0e0;
 }
+
 .single-post__prev,
 .single-post__next {
   font-size: 14px;
 }
+
 .single-post__prev a,
 .single-post__next a {
   color: #007bff;
   text-decoration: none;
 }
+
 .single-post__prev a:hover,
 .single-post__next a:hover {
   text-decoration: underline;
+}
+
+.single-post__container {
+  display: flex;
 }
 
 .balloon {
@@ -491,14 +498,14 @@ body {
     font-size: 0.9rem;
   }
 
-  article {
+  .single-post__left {
     flex-basis: 70%;
     /* text-align: left; */
     /* display: inline-flex; */
     /* margin: 10px auto; */
   }
 
-  aside {
+  .single-post__right {
     flex-basis: 30%;
     /* text-align: right; */
   }
