@@ -7,13 +7,15 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class="footer__left">
-            <a href="<?= home_url() ?>" class="brand-logo">
-                <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
-                    style="height: 56px; vertical-align: middle;">
-            </a>
-            <div class="footer__site-title">
-                <span class="footer__site-title--main">HIROFUMI KURUMA</span>
-                <span class="footer__site-title--sub">GA4コンサルタント</span>
+            <div style="footer__site-title-wrapper">
+                <a href="<?= home_url() ?>" class="brand-logo">
+                    <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
+                        style="height: 56px; vertical-align: middle;">
+                </a>
+                <div class="footer__site-title">
+                    <span class="footer__site-title--main">HIROFUMI KURUMA</span>
+                    <span class="footer__site-title--sub">GA4コンサルタント</span>
+                </div>
             </div>
             <ul class="footer__sns-list">
                 <li class="footer__sns-item">

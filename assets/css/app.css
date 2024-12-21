@@ -132,6 +132,10 @@ body {
   margin: 10px auto;
 }
 
+.footer__site-title-wrapper {
+  width: 100%;
+}
+
 .footer__site-title {
   display: flex;
   flex-direction: column;
