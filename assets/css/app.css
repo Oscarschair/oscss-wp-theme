@@ -237,11 +237,14 @@ body {
 
 .footer__menu-list {
   list-style: none;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-  display: block;
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: flex-end; */
+  /* margin: 0; */
+  /* padding: 0; */
+  /* display: block; */
+  /* gap: 15px; */
 }
 
 .footer__menu-list li {
