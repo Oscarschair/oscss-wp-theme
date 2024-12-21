@@ -13,16 +13,12 @@ get_header(); ?>
         <?php
         if (have_posts()) :
             while (have_posts()) : the_post(); ?>
-
-        <div class="single-post__left">
-
-            <article id="post-<?php the_ID(); ?>" <?php post_class('single-post__article'); ?>>
                 <header class="single-post__header">
                     <h2 class="single-post__title"> <?php the_title(); ?> </h2>
                     <?php if (has_post_thumbnail()) : ?>
-                    <div class="single-post__thumbnail">
-                        <?php the_post_thumbnail('full', ['class' => 'single-post__image']); ?>
-                    </div>
+                        <div class="single-post__thumbnail">
+                            <?php the_post_thumbnail('full', ['class' => 'single-post__image']); ?>
+                        </div>
                     <?php endif; ?>
 
                     <div class="single-post__meta">
@@ -33,41 +29,45 @@ get_header(); ?>
                         </span>
                     </div>
                 </header>
+                <div class="single-post__left">
 
-                <div class="single-post__content">
-                    <?php the_content(); ?>
-                </div>
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('single-post__article'); ?>>
 
-                <?php if (has_tag()) : ?>
-                <footer class="single-post__footer">
-                    <div class="single-post__tags">
-                        <?php the_tags('<span class="single-post__tag">', '</span><span class="single-post__tag">', '</span>'); ?>
-                    </div>
-                </footer>
-                <?php endif; ?>
-            </article>
-        </div>
-        <div class="single-post__right">
-            <aside class="single-post__share">
-                <h2 class="single-post__share-title">Share This Article</h2>
-                <div class="single-post__share-buttons">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>"
-                        target="_blank"
-                        class="single-post__share-button single-post__share-button--facebook">Facebook</a>
-                    <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>&text=<?php echo urlencode(get_the_title()); ?>"
-                        target="_blank" class="single-post__share-button single-post__share-button--twitter">Twitter</a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode(get_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>"
-                        target="_blank"
-                        class="single-post__share-button single-post__share-button--linkedin">LinkedIn</a>
-                </div>
-            </aside>
 
-            <nav class="single-post__navigation">
-                <div class="single-post__prev"> <?php previous_post_link('%link', '← Previous Article: %title'); ?>
+                        <div class="single-post__content">
+                            <?php the_content(); ?>
+                        </div>
+
+                        <?php if (has_tag()) : ?>
+                            <footer class="single-post__footer">
+                                <div class="single-post__tags">
+                                    <?php the_tags('<span class="single-post__tag">', '</span><span class="single-post__tag">', '</span>'); ?>
+                                </div>
+                            </footer>
+                        <?php endif; ?>
+                    </article>
                 </div>
-                <div class="single-post__next"> <?php next_post_link('%link', 'Next Article: %title →'); ?> </div>
-            </nav>
-        </div>
+                <div class="single-post__right">
+                    <aside class="single-post__share">
+                        <h2 class="single-post__share-title">Share This Article</h2>
+                        <div class="single-post__share-buttons">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>"
+                                target="_blank"
+                                class="single-post__share-button single-post__share-button--facebook">Facebook</a>
+                            <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>&text=<?php echo urlencode(get_the_title()); ?>"
+                                target="_blank" class="single-post__share-button single-post__share-button--twitter">Twitter</a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode(get_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>"
+                                target="_blank"
+                                class="single-post__share-button single-post__share-button--linkedin">LinkedIn</a>
+                        </div>
+                    </aside>
+
+                    <nav class="single-post__navigation">
+                        <div class="single-post__prev"> <?php previous_post_link('%link', '← Previous Article: %title'); ?>
+                        </div>
+                        <div class="single-post__next"> <?php next_post_link('%link', 'Next Article: %title →'); ?> </div>
+                    </nav>
+                </div>
 
     </div>
     <div class="container">
@@ -78,10 +78,10 @@ get_header(); ?>
                 endif;
         ?>
 
-        <?php endwhile;
+    <?php endwhile;
         else : ?>
-        <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'oscarchair'); ?></p>
-        <?php endif; ?>
+    <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'oscarchair'); ?></p>
+<?php endif; ?>
     </div>
 </main>
 
