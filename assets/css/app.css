@@ -445,6 +445,8 @@ body {
   padding: 20px 5px;
   border-top: 5px solid #65a6ff;
   background-color: #a9c4ea85;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -487,5 +489,17 @@ body {
 
   .footer__menu-list a {
     font-size: 0.9rem;
+  }
+
+  article {
+    flex-basis: 70%;
+    /* text-align: left; */
+    /* display: inline-flex; */
+    /* margin: 10px auto; */
+  }
+
+  aside {
+    flex-basis: 30%;
+    /* text-align: right; */
   }
 }
