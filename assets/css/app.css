@@ -99,7 +99,7 @@
 nav {
   background-color: transparent !important;
   box-shadow: none !important;
-  /* 不要な影を削除 */
+  height: auto;
 }
 
 nav ul a:hover {
