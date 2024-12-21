@@ -114,7 +114,7 @@ nav ul a:hover {
 }
 
 /* Nav items */
-.header__menu {
+/* .header__menu {
   list-style: none;
   position: absolute;
   width: 100%;
@@ -127,7 +127,7 @@ nav ul a:hover {
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
   transform: scale(1, 0);
   transform-origin: top;
-}
+} */
 
 /* Hamburger menu button */
 /* .header__menu-btn:checked ~ .header__menu { */
@@ -162,28 +162,28 @@ nav ul a:hover {
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s; */
 /* } */
 
-.header__menu-btn {
+/* .header__menu-btn {
   display: none;
-}
+} */
 
-.header__menu-icon {
+/* .header__menu-icon {
   display: inline-block;
   position: relative;
   cursor: pointer;
   padding: 24px 14px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+} */
 
-.navicon {
+/* .navicon {
   background: #ddd;
   display: block;
   height: 3px;
   width: 26px;
   position: relative;
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-}
+} */
 
-.navicon:before,
+/* .navicon:before,
 .navicon:after {
   content: "";
   display: block;
@@ -192,15 +192,15 @@ nav ul a:hover {
   position: absolute;
   background: #ddd;
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-}
+} */
 
-.navicon:before {
+/* .navicon:before {
   top: 9px;
-}
+} */
 
-.navicon:after {
+/* .navicon:after {
   bottom: 9px;
-}
+} */
 
 /* Hamburger Menu Animation Start */
 /* .header__menu-btn:checked ~ .header__menu-icon .navicon:before { */
@@ -225,7 +225,7 @@ nav ul a:hover {
 /* Hamburger Menu Animation End */
 
 /* Navbar Container */
-.navtext-container {
+/* .navtext-container {
   width: 100%;
   height: 52px;
   position: absolute;
@@ -233,16 +233,16 @@ nav ul a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Navbar Text */
-.navtext {
+/* .navtext {
   position: absolute;
   text-transform: uppercase;
   color: #ddd;
   letter-spacing: 4px;
   font-size: 20px;
-}
+} */
 
 body {
   margin-top: 80px;
