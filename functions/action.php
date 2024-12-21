@@ -107,40 +107,40 @@ add_action('wp_enqueue_scripts', function () {
 // }
 // add_filter('mce_buttons_2', 'my_mce_buttons_2');
 
-add_action('oscss_banner', function () {
-    global $post;
-    $data = [];
+// add_action('oscss_banner', function () {
+//     global $post;
+//     $data = [];
 
-    // pages with image as banner background
-    $pages = [
-        'home',
-        'service',
-        'blog',
-        'contact'
-    ];
+//     // pages with image as banner background
+//     $pages = [
+//         'home',
+//         'service',
+//         'blog',
+//         'contact'
+//     ];
 
-    // $data
-    // white-text: テキストを白色にするフラグ（スタイル制御用）。
-    // heading-v2: 見出しのバージョン（例: カスタムスタイル用）。
+// $data
+// white-text: テキストを白色にするフラグ（スタイル制御用）。
+// heading-v2: 見出しのバージョン（例: カスタムスタイル用）。
 
-    // home
-    if (is_page('home')) {
-        $data['banner-bg'] = 'home-bg.jpg';
-        $data['white-text'] = 1;
-    }
+// home
+// if (is_page('home')) {
+//     $data['banner-bg'] = 'home-bg.jpg';
+//     $data['white-text'] = 1;
+// }
 
-    // service
-    if (is_page('service')) {
-        $data['banner-bg'] = 'service-bg.webp';
-    }
+// service
+// if (is_page('service')) {
+//     $data['banner-bg'] = 'service-bg.webp';
+// }
 
-    // check if page with image as banner; otherwise use default
-    if (is_page($pages)) {
-        get_template_part('parts/banner', 'image', $data);
-    } else {
-        get_template_part('parts/banner', 'default');
-    }
-});
+// check if page with image as banner; otherwise use default
+//     if (is_page($pages)) {
+//         get_template_part('parts/banner', 'image', $data);
+//     } else {
+//         get_template_part('parts/banner', 'default');
+//     }
+// });
 
 
 /**
