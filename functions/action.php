@@ -16,39 +16,26 @@ add_action('init', 'register_my_menus');
 
 
 /**
- * テンプレートがロードされる直前での処理
- * Classesを読み込みする
- */
-// add_action('template_redirect', function () {
-//     $template_directory = get_template_directory();
-
-//     if (is_front_page()) {
-//         require_once $template_directory . '/Classes/News/NewsSection.php';
-//         require_once $template_directory . '/Classes/FrontPage/FrontPage.php';
-//     }
-// });
-
-/**
  * 指定したスラッグの親ページを持っているか
  *
  * @param $parentSlug
  * @return bool
  */
-function has_parent_page($parentSlug): bool
-{
-    $parent = get_page_by_path($parentSlug);
-    if (!$parent) {
-        return false;
-    }
+// function has_parent_page($parentSlug): bool
+// {
+//     $parent = get_page_by_path($parentSlug);
+//     if (!$parent) {
+//         return false;
+//     }
 
-    $queriedObjectId = get_queried_object_id();
-    if ($queriedObjectId === 0) {
-        return false;
-    }
+//     $queriedObjectId = get_queried_object_id();
+//     if ($queriedObjectId === 0) {
+//         return false;
+//     }
 
-    $parentId = wp_get_post_parent_id($queriedObjectId);
-    return $parentId === $parent->ID;
-}
+//     $parentId = wp_get_post_parent_id($queriedObjectId);
+//     return $parentId === $parent->ID;
+// }
 
 /**
  * Add MIME types.

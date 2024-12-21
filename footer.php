@@ -9,7 +9,7 @@
                                     alt="OSCSS LOGO">
                             </picture>
                             <div>
-                                <span>HELLOss HIROFUMI KURUMA</span>
+                                <span>HIROFUMI KURUMA</span>
                                 <span>GA4コンサルタント</span>
                             </div>
                         </div>
