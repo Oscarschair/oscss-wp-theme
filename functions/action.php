@@ -40,12 +40,12 @@ add_action('init', 'register_my_menus');
 /**
  * Add MIME types.
  */
-add_action('upload_mimes', function ($mimes) {
-    $mimes['svg']  = 'image/svg+xml';
-    $mimes['webp'] = 'image/webp';
+// add_action('upload_mimes', function ($mimes) {
+//     $mimes['svg']  = 'image/svg+xml';
+//     $mimes['webp'] = 'image/webp';
 
-    return $mimes;
-});
+//     return $mimes;
+// });
 
 /**
  * Add enqueue scripts
@@ -71,41 +71,41 @@ add_action('wp_enqueue_scripts', function () {
 /**
  * Add format on the wysywyg toolbar
  *------------------------------------------*/
-function my_mce_before_init($init)
-{
-    $style_formats = array(
-        array(
-            'title' => 'Default Size',
-            'block' => 'div', // You can use 'div' or 'p' depending on the context
-            'classes' => '',
-            'wrapper' => true,
+// function my_mce_before_init($init)
+// {
+//     $style_formats = array(
+//         array(
+//             'title' => 'Default Size',
+//             'block' => 'div', // You can use 'div' or 'p' depending on the context
+//             'classes' => '',
+//             'wrapper' => true,
 
-            'styles' => array(
-                'font-size' => '16'
-            )
-        ),
-        array(
-            'title' => 'Small Size',
-            'block' => 'div', // You can use 'div' or 'p' depending on the context
-            'classes' => 'has-small-font-size',
-            'wrapper' => true,
+//             'styles' => array(
+//                 'font-size' => '16'
+//             )
+//         ),
+//         array(
+//             'title' => 'Small Size',
+//             'block' => 'div', // You can use 'div' or 'p' depending on the context
+//             'classes' => 'has-small-font-size',
+//             'wrapper' => true,
 
-            'styles' => array(
-                'font-size' => '12px'
-            )
-        )
-    );
-    $init['style_formats'] = json_encode($style_formats);
-    return $init;
-}
-add_filter('tiny_mce_before_init', 'my_mce_before_init');
+//             'styles' => array(
+//                 'font-size' => '12px'
+//             )
+//         )
+//     );
+//     $init['style_formats'] = json_encode($style_formats);
+//     return $init;
+// }
+// add_filter('tiny_mce_before_init', 'my_mce_before_init');
 
-function my_mce_buttons_2($buttons)
-{
-    array_unshift($buttons, 'styleselect');
-    return $buttons;
-}
-add_filter('mce_buttons_2', 'my_mce_buttons_2');
+// function my_mce_buttons_2($buttons)
+// {
+//     array_unshift($buttons, 'styleselect');
+//     return $buttons;
+// }
+// add_filter('mce_buttons_2', 'my_mce_buttons_2');
 
 add_action('oscss_banner', function () {
     global $post;
