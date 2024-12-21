@@ -604,11 +604,7 @@ body {
     display: block !important;
   }
 
-  .header__menu-btn,
-  .header__menu-icon {
-    display: none;
-  }
-  [type="checkbox"] + label {
+  .header__menu-toggle {
     display: none;
   }
 
