@@ -250,6 +250,7 @@ body {
 
 .footer__menu-list li {
   display: inline-block;
+  line-height: 2rem;
 }
 
 .footer__menu-list a {
