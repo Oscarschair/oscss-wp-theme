@@ -231,6 +231,7 @@ body {
 
 .footer__menu-list {
   list-style: none;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   display: flex;
@@ -246,10 +247,6 @@ body {
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s;
-}
-
-.footer__menu-list a:hover {
-  color: #007bff;
 }
 
 @media (min-width: 768px) {
