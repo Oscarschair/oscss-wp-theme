@@ -13,30 +13,6 @@ function register_my_menus()
 }
 add_action('init', 'register_my_menus');
 
-
-
-/**
- * 指定したスラッグの親ページを持っているか
- *
- * @param $parentSlug
- * @return bool
- */
-// function has_parent_page($parentSlug): bool
-// {
-//     $parent = get_page_by_path($parentSlug);
-//     if (!$parent) {
-//         return false;
-//     }
-
-//     $queriedObjectId = get_queried_object_id();
-//     if ($queriedObjectId === 0) {
-//         return false;
-//     }
-
-//     $parentId = wp_get_post_parent_id($queriedObjectId);
-//     return $parentId === $parent->ID;
-// }
-
 /**
  * Add MIME types.
  */
@@ -67,45 +43,6 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('scripts-js', $template_directory_uri . '/assets/js/app.js', [], time(), true);
 });
 
-
-/**
- * Add format on the wysywyg toolbar
- *------------------------------------------*/
-function my_mce_before_init($init)
-{
-    $style_formats = array(
-        array(
-            'title' => 'Default Size',
-            'block' => 'div', // You can use 'div' or 'p' depending on the context
-            'classes' => '',
-            'wrapper' => true,
-
-            'styles' => array(
-                'font-size' => '16'
-            )
-        ),
-        array(
-            'title' => 'Small Size',
-            'block' => 'div', // You can use 'div' or 'p' depending on the context
-            'classes' => 'has-small-font-size',
-            'wrapper' => true,
-
-            'styles' => array(
-                'font-size' => '12px'
-            )
-        )
-    );
-    $init['style_formats'] = json_encode($style_formats);
-    return $init;
-}
-add_filter('tiny_mce_before_init', 'my_mce_before_init');
-
-function my_mce_buttons_2($buttons)
-{
-    array_unshift($buttons, 'styleselect');
-    return $buttons;
-}
-add_filter('mce_buttons_2', 'my_mce_buttons_2');
 
 // add_action('oscss_banner', function () {
 //     global $post;
