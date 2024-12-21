@@ -131,9 +131,9 @@ nav ul a:hover {
 
 /* Hamburger menu button */
 .header__menu-btn:checked ~ .header__menu {
-  transform: scale(1, 1);
+  /* transform: scale(1, 1);
   transform-origin: top;
-  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s; */
 }
 
 /* Hamburger menbu text */
@@ -158,8 +158,8 @@ nav ul a:hover {
 
 .header__menu-btn:checked ~ .header__menu a,
 .header__menu-btn:checked ~ .header__menu li {
-  opacity: 1;
-  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+  /* opacity: 1;
+  transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s; */
 }
 
 .header__menu-btn {
@@ -204,23 +204,23 @@ nav ul a:hover {
 
 /* Hamburger Menu Animation Start */
 .header__menu-btn:checked ~ .header__menu-icon .navicon:before {
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
 }
 
 .header__menu-btn:checked ~ .header__menu-icon .navicon:after {
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
 }
 
 .header__menu-btn:checked ~ .header__menu-icon:not(.steps) .navicon:before {
-  top: 0;
+  /* top: 0; */
 }
 .header__menu-btn:checked ~ .header__menu-icon:not(.steps) .navicon:after {
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 .header__menu-btn:checked ~ .header__menu-icon .navicon {
-  background: rgba(0, 0, 0, 0);
-  transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  /* background: rgba(0, 0, 0, 0); */
+  /* transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s; */
 }
 /* Hamburger Menu Animation End */
 
