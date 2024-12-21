@@ -261,6 +261,100 @@ body {
   transition: color 0.3s;
 }
 
+/* サムネイル */
+.single-post__thumbnail {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.single-post__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* メタ情報 */
+.single-post__meta {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 20px;
+}
+.single-post__categories a {
+  color: #007bff;
+  text-decoration: none;
+}
+.single-post__categories a:hover {
+  text-decoration: underline;
+}
+
+/* SNS共有セクション */
+.single-post__share {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+.single-post__share-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.single-post__share-buttons {
+  display: flex;
+  gap: 10px;
+}
+.single-post__share-button {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+.single-post__share-button--facebook {
+  background-color: #3b5998;
+}
+.single-post__share-button--facebook:hover {
+  background-color: #2d4373;
+}
+.single-post__share-button--twitter {
+  background-color: #1da1f2;
+}
+.single-post__share-button--twitter:hover {
+  background-color: #0d95e8;
+}
+.single-post__share-button--linkedin {
+  background-color: #0077b5;
+}
+.single-post__share-button--linkedin:hover {
+  background-color: #005582;
+}
+
+/* ナビゲーション */
+.single-post__navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+.single-post__prev,
+.single-post__next {
+  font-size: 14px;
+}
+.single-post__prev a,
+.single-post__next a {
+  color: #007bff;
+  text-decoration: none;
+}
+.single-post__prev a:hover,
+.single-post__next a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .header__left,
   .header__right {
