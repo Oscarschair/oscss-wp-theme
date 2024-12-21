@@ -7,7 +7,7 @@
 <footer class="footer">
     <div class="container footer__container">
         <div class="footer__left">
-            <div style="footer__site-title-wrapper">
+            <div class="footer__site-title-wrapper">
                 <a href="<?= home_url() ?>" class="brand-logo">
                     <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
                         style="height: 56px; vertical-align: middle;">
@@ -55,7 +55,7 @@
         </div>
     </div>
 
-    <div class="footer__bottom">
+    <div class="container footer__bottom">
         <ul class="footer__links">
             <li class="footer__link-item">
                 <a href="<?= home_url('/terms') ?>" class="footer__link">利用規約</a>
