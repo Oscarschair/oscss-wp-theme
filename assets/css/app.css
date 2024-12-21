@@ -49,7 +49,15 @@
 }
 
 .header__menu {
-    margin-left: auto;
+    display: none;
+}
+
+.header__menu.active {
+    display: block;
+}
+
+.header__menu-toggle {
+    display: block;
 }
 
 .header__menu-list {
@@ -90,4 +98,14 @@ nav ul a:hover {
 body {
     margin-top: 80px;
     /* ヘッダーの高さ分の余白を追加 */
+}
+
+@media (min-width: 768px) {
+    .header__menu {
+        display: block !important;
+    }
+
+    .header__menu-toggle {
+        display: none;
+    }
 }

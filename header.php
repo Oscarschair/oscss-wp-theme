@@ -15,20 +15,20 @@
 <head>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -39,9 +39,9 @@
     $custom_css = get_field('custom_css');
     if (!empty($custom_css)):
     ?>
-        <style>
-            <?= esc_html($custom_css) ?>
-        </style>
+    <style>
+    <?=esc_html($custom_css) ?>
+    </style>
     <?php
     endif;
     ?>
@@ -54,24 +54,30 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header class="header">
-        <div class="container header__container">
-            <a href="<?= home_url() ?>" class="brand-logo">
-                <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
-                    style="height: 56px; vertical-align: middle;">
-            </a>
-            <div class="header__site-title">
-                <span class="header__site-title--main">HIROFUMI KURUMA</span>
-                <span class="header__site-title--sub">GA4コンサルタント</span>
+        <div class="container header__container row">
+            <div class="col s12 m6">
+                <a href="<?= home_url() ?>" class="brand-logo">
+                    <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
+                        style="height: 56px; vertical-align: middle;">
+                </a>
+                <div class="header__site-title">
+                    <span class="header__site-title--main">HIROFUMI KURUMA</span>
+                    <span class="header__site-title--sub">GA4コンサルタント</span>
+                </div>
             </div>
-            <nav class="header__menu">
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'header_menu',
-                    'container'      => false,
-                    'menu_class'     => 'header__menu-list',
-                    'fallback_cb'    => false,
-                ));
-                ?>
-            </nav>
+
+            <div class="col s12 m6 header__menu-wrapper">
+                <button class="header__menu-toggle" onclick="toggleMenu()">Menu</button>
+                <nav class="header__menu">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'header_menu',
+                        'container' => false,
+                        'menu_class' => 'header__menu-list',
+                        'fallback_cb' => false,
+                    ));
+                    ?>
+                </nav>
+            </div>
         </div>
     </header>
