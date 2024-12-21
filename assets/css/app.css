@@ -35,7 +35,7 @@
   text-align: right;
 }
 
-.brand-logo {
+.header__brand-logo {
   height: 60px;
   display: flex;
   align-items: center;
@@ -157,6 +157,12 @@ body {
   text-align: right;
 }
 
+.footer__brand-logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
 .footer__sns-list {
   list-style: none;
   margin: 0;
@@ -234,7 +240,7 @@ body {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: block;
   gap: 15px;
 }
 
@@ -266,5 +272,9 @@ body {
   .footer__left,
   .footer__right {
     flex-basis: 50%;
+  }
+
+  .footer__menu-list {
+    display: flex;
   }
 }

@@ -15,20 +15,20 @@
 <head>
     <!-- Google Tag Manager -->
     <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -39,9 +39,9 @@
     $custom_css = get_field('custom_css');
     if (!empty($custom_css)):
     ?>
-    <style>
-    <?=esc_html($custom_css) ?>
-    </style>
+        <style>
+            <?= esc_html($custom_css) ?>
+        </style>
     <?php
     endif;
     ?>
@@ -56,7 +56,7 @@
     <header class="header">
         <div class="container header__container">
             <h1 class="header__left">
-                <a href="<?= home_url() ?>" class="brand-logo">
+                <a href="<?= home_url() ?>" class="header__brand-logo">
                     <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
                         style="height: 56px; vertical-align: middle;">
                 </a>

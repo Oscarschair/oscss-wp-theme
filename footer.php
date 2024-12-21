@@ -8,7 +8,7 @@
     <div class="container footer__container">
         <div class="footer__left">
             <div class="footer__site-title-wrapper">
-                <a href="<?= home_url() ?>" class="brand-logo">
+                <a href="<?= home_url() ?>" class="footer__brand-logo">
                     <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
                         style="height: 56px; vertical-align: middle;">
                 </a>
