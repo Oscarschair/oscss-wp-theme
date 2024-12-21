@@ -402,6 +402,7 @@ body {
   border-radius: 3px;
   background-color: #fff;
 }
+
 .frame-title {
   position: absolute;
   top: -13px;
@@ -409,6 +410,7 @@ body {
   padding: 0 5px;
   background-color: #fff;
 }
+
 .frame-title .fa {
   margin-right: 5px;
 }
@@ -419,9 +421,11 @@ body {
   color: #fff;
   border-radius: 3px;
 }
+
 .frame-blue {
   border-color: #0000ff;
 }
+
 .attention {
   border: 5px solid black;
   border-radius: 20px;
@@ -431,8 +435,16 @@ body {
   text-align: center;
   display: inline-block;
 }
+
 .attention p {
   margin: 0;
+}
+
+.heading {
+  margin: 30px 0;
+  padding: 20px 5px;
+  border-top: 5px solid #65a6ff;
+  background-color: #a9c4ea85;
 }
 
 @media (min-width: 768px) {
