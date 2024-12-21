@@ -26,6 +26,8 @@
 .header__left {
     flex-basis: 70%;
     text-align: left;
+    display: inline-flex;
+    margin: 10px auto;
 }
 
 .header__right {
@@ -37,10 +39,6 @@
     height: 60px;
     display: flex;
     align-items: center;
-}
-
-.header__site-title-wrapper {
-    display: inline-flex;
 }
 
 .header__site-title {
