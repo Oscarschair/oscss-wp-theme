@@ -80,6 +80,11 @@ nav {
     /* 不要な影を削除 */
 }
 
+nav ul a:hover {
+    background-color: none !important;
+    border-bottom: 4px solid !important;
+}
+
 body {
     margin-top: 80px;
     /* ヘッダーの高さ分の余白を追加 */
