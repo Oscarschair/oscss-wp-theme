@@ -76,13 +76,12 @@ main {
 
 .header__menu-toggle {
   position: absolute; /* 親要素に対して位置を指定 */
-  top: 10px; /* 上端からの距離を調整 */
-  right: 10px; /* 右端からの距離を調整 */
+  top: 45px; /* 上端からの距離を調整 */
+  right: 35px; /* 右端からの距離を調整 */
 
   background: none;
   border: none;
   cursor: pointer;
-  position: relative;
   padding: 10px;
   display: block;
   width: 30px; /* ボタンの幅 */
