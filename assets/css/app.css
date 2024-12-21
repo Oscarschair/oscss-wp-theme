@@ -3,6 +3,17 @@
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    position: fixed;
+    /* 固定表示 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    /* 背景色を指定 */
+    z-index: 1000;
+    /* 他の要素の上に表示 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* ヘッダー下に影を追加 */
 }
 
 .header__container {
@@ -61,4 +72,9 @@
 
 .header__menu-list a:hover {
     color: #007BFF;
+}
+
+body {
+    margin-top: 80px;
+    /* ヘッダーの高さ分の余白を追加 */
 }
