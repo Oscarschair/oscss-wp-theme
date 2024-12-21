@@ -68,7 +68,7 @@
             </h1>
 
             <div class="header__right">
-                <button class="header__menu-toggle" onclick="toggleMenu()">Menu</button>
+                <button class="header__menu-toggle" aria-label="メニューを開く" onclick="toggleMenu()"></button>
                 <nav class="header__menu">
                     <?php
                     wp_nav_menu(array(
