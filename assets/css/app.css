@@ -128,10 +128,15 @@ body {
 .footer__left {
   flex-basis: 70%;
   text-align: left;
+  display: inline-flex;
+  margin: 10px auto;
 }
 
 .footer__site-title {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
 }
 
 .footer__site-title--main {
