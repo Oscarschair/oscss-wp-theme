@@ -43,42 +43,31 @@
         </div>
     </div>
 
-
-    <div class="l-footer__wrapper">
-        <nav class="p-footer__nav-menu">
-            <div class="p-footer__nav-link__right">
-                <ul class="p-footer__nav-menu__main">
-                    <li class="p-footer__nav-menu__main__item">
-                        <a href="https://stg.oscarchair.jp/profile/">プロフィール</a>
-                    </li>
-                    <li class="p-footer__nav-menu__main__item">
-                        <a href="https://stg.oscarchair.jp/blog/">オスカーの学習帳</a>
-                    </li>
-                    <li class="p-footer__nav-menu__main__item">
-                        <a href="https://stg.oscarchair.jp/contact/">お問い合わせ</a>
-                    </li>
-                    <li class="p-footer__nav-menu__main__item">
-                        <a href="https://stg.oscarchair.jp/download/">ダウンロード</a>
-                    </li>
-                </ul>
-                <ul class="p-footer__nav-menu__sub">
-                    <li>
-                        <a href="<?= home_url('/terms/') ?>">利用規約</a>
-                    </li>
-                    <li>
-                        <a href="<?= home_url('/privacy-policy/') ?>">プライバシーポリシー</a>
-                    </li>
-                    <li>
-                        <a href="<?= home_url('/accessibility-policy/') ?>">アクセシビリティ方針</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <div class="footer__bottom">
+        <div class="footer__bottom-left">
+            <p class="footer__copyright">&copy; <?= date('Y') ?> HIROFUMI KURUMA. All Rights Reserved.</p>
+        </div>
+        <div class="footer__bottom-right">
+            <ul class="footer__links">
+                <li class="footer__link-item">
+                    <a href="<?= home_url('/terms') ?>" class="footer__link">利用規約</a>
+                </li>
+                <li class="footer__link-item">
+                    <a href="<?= home_url('/privacy-policy') ?>" class="footer__link">プライバシーポリシー</a>
+                </li>
+            </ul>
+            <nav class="footer__menu">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'footer_menu',
+                    'container' => false,
+                    'menu_class' => 'footer__menu-list',
+                    'fallback_cb' => false,
+                ));
+                ?>
+            </nav>
+        </div>
     </div>
-    <div class="p-copyright">
-        <p>&copy; 2024 HIROFUMI KURUMA All rights reserved.</p>
-    </div>
-
 
 </footer>
 <?php wp_footer(); ?>
