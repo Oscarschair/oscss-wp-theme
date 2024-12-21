@@ -102,3 +102,6 @@ add_filter('wp_get_attachment_url', function ($url, $post_id) {
     }
     return $url;
 }, 10, 2);
+
+// サムネイル機能を有効化
+add_theme_support('post-thumbnails');
