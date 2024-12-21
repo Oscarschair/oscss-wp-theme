@@ -256,7 +256,7 @@ body {
 .footer__menu-list a {
   color: #333;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   transition: color 0.3s;
 }
 
@@ -292,5 +292,9 @@ body {
     /* padding: 0; */
     /* display: block; */
     gap: 15px;
+  }
+
+  .footer__menu-list a {
+    font-size: 0.9rem;
   }
 }
