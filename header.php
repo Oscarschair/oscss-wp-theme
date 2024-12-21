@@ -15,20 +15,20 @@
 <head>
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-xxxxxxxx');
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -39,9 +39,9 @@
     $custom_css = get_field('custom_css');
     if (!empty($custom_css)):
     ?>
-        <style>
-            <?= esc_html($custom_css) ?>
-        </style>
+    <style>
+    <?=esc_html($custom_css) ?>
+    </style>
     <?php
     endif;
     ?>
@@ -68,7 +68,9 @@
             </h1>
 
             <div class="header__right">
-                <button class="header__menu-toggle" onclick="toggleMenu()">Menu</button>
+                <!-- <button class="header__menu-toggle" onclick="toggleMenu()">Menu</button> -->
+                <input type="checkbox" class="header__menu-btn" id="header__menu-btn">
+                <label for="header__menu-btn" class="header__menu-icon"><span class="navicon"></span></label>
                 <nav class="header__menu">
                     <?php
                     wp_nav_menu(array(
