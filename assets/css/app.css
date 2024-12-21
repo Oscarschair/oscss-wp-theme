@@ -128,12 +128,11 @@ body {
 .footer__left {
   flex-basis: 70%;
   text-align: left;
-  display: inline-flex;
   margin: 10px auto;
 }
 
 .footer__site-title-wrapper {
-  width: 100%;
+  display: inline-flex;
 }
 
 .footer__site-title {
@@ -265,5 +264,10 @@ body {
 
   .header__menu-toggle {
     display: none;
+  }
+
+  .footer__left,
+  .footer__right {
+    flex-basis: 50%;
   }
 }
