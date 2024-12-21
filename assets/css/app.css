@@ -122,9 +122,6 @@ main {
   z-index: 1000;
 
   width: 100%;
-
-  display: flex;
-  justify-content: flex-end;
   /* メニューを右揃えに */
   gap: 15px;
   list-style: none;
@@ -653,8 +650,9 @@ body {
   }
 
   .header__menu-list {
-    display: block;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .footer__left,
