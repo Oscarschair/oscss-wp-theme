@@ -242,11 +242,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0px;
-  /* justify-content: flex-end; */
-  /* margin: 0; */
-  /* padding: 0; */
-  /* display: block; */
-  /* gap: 15px; */
 }
 
 .footer__menu-list li {
@@ -261,6 +256,10 @@ body {
   transition: color 0.3s;
 }
 
+.single-post__title {
+  font-size: 2.5rem;
+}
+
 /* サムネイル */
 .single-post__thumbnail {
   margin-bottom: 20px;
@@ -268,7 +267,7 @@ body {
 }
 
 .single-post__image {
-  width: 100%;
+  width: 70%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
