@@ -18,12 +18,12 @@ add_action('init', 'register_theme_menus');
 /**
  * Add MIME types.
  */
-// add_action('upload_mimes', function ($mimes) {
-//     $mimes['svg']  = 'image/svg+xml';
-//     $mimes['webp'] = 'image/webp';
+add_action('upload_mimes', function ($mimes) {
+    $mimes['svg']  = 'image/svg+xml';
+    $mimes['webp'] = 'image/webp';
 
-//     return $mimes;
-// });
+    return $mimes;
+});
 
 /**
  * Add enqueue scripts
