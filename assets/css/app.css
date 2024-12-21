@@ -608,13 +608,12 @@ body {
   .header__menu-icon {
     display: none;
   }
+  [type="checkbox"] + label {
+    display: none;
+  }
 
   .header__menu-list {
     display: block;
-  }
-
-  [type="checkbox"] + label {
-    display: none;
   }
 
   .footer__left,

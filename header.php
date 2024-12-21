@@ -69,8 +69,6 @@
 
             <div class="header__right">
                 <!-- <button class="header__menu-toggle" onclick="toggleMenu()">Menu</button> -->
-                <input type="checkbox" class="header__menu-btn" id="header__menu-btn">
-                <label for="header__menu-btn" class="header__menu-icon"><span class="navicon"></span></label>
                 <nav class="header__menu">
                     <?php
                     wp_nav_menu(array(
