@@ -1,0 +1,64 @@
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand-logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header__site-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.header__site-title--main {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header__site-title--sub {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #555;
+}
+
+.header__menu {
+    margin-left: auto;
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu-list li {
+    font-size: 1rem;
+}
+
+.header__menu-list a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.header__menu-list a:hover {
+    color: #007BFF;
+}

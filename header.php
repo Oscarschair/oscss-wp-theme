@@ -53,32 +53,25 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-xxxxxxxx" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper container">
-                    <a href="<?= home_url() ?>" class="brand-logo">
-                        <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
-                            style="height: 56px; vertical-align: middle;">
-                        <span>HIROFUMI KURUMA</span>
-                    </a>
-                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="<?= esc_url(home_url('profile/')) ?>">プロフィール</a></li>
-                        <li><a href="<?= esc_url(home_url('blog/')) ?>">オスカーの学習帳</a></li>
-                        <li><a href="<?= esc_url(home_url('contact/')) ?>">お問い合わせ</a></li>
-                        <li><a href="<?= esc_url(home_url('download/')) ?>">ダウンロード</a></li>
-                    </ul>
-                </div>
+    <header class="header">
+        <div class="container header__container">
+            <a href="<?= home_url() ?>" class="brand-logo">
+                <img src="<?= get_template_directory_uri() ?>/assets/svg/favicon-trans.svg" alt="OSCSS LOGO"
+                    style="height: 56px; vertical-align: middle;">
+            </a>
+            <div class="header__site-title">
+                <span class="header__site-title--main">HIROFUMI KURUMA</span>
+                <span class="header__site-title--sub">GA4コンサルタント</span>
+            </div>
+            <nav class="header__menu">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'header_menu',
+                    'container'      => false,
+                    'menu_class'     => 'header__menu-list',
+                    'fallback_cb'    => false,
+                ));
+                ?>
             </nav>
         </div>
-
-        <ul class="sidenav" id="mobile-nav">
-            <li><a href="<?= esc_url(home_url('profile/')) ?>">プロフィール</a></li>
-            <li><a href="<?= esc_url(home_url('blog/')) ?>">オスカーの学習帳</a></li>
-            <li><a href="<?= esc_url(home_url('contact/')) ?>">お問い合わせ</a></li>
-            <li><a href="<?= esc_url(home_url('download/')) ?>">ダウンロード</a></li>
-        </ul>
     </header>

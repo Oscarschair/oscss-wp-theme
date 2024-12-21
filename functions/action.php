@@ -4,6 +4,17 @@
  * Action
  */
 
+
+function register_my_menus()
+{
+    register_nav_menus(array(
+        'header_menu' => __('Header Menu', 'oscss_wp_theme'),
+    ));
+}
+add_action('init', 'register_my_menus');
+
+
+
 /**
  * テンプレートがロードされる直前での処理
  * Classesを読み込みする
