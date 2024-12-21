@@ -23,7 +23,6 @@ get_header(); ?>
 
                     <div class="single-post__meta">
                         <span class="single-post__date"> <?php echo get_the_date(); ?> </span>
-                        <span class="single-post__author"> <?php the_author(); ?> </span>
                         <span class="single-post__categories">
                             <?php the_category(', '); ?>
                         </span>
