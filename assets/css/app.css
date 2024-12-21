@@ -604,7 +604,8 @@ body {
     display: block !important;
   }
 
-  .header__menu-toggle {
+  .header__menu-btn,
+  .header__menu-btn {
     display: none;
   }
 
