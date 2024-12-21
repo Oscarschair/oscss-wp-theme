@@ -119,7 +119,7 @@ body {
 }
 
 .footer__container {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -274,7 +274,8 @@ body {
     flex-basis: 50%;
   }
 
-  .footer__menu-list {
+  .footer__menu-list,
+  .footer__container {
     display: flex;
   }
 }
