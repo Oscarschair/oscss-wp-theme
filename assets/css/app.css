@@ -174,24 +174,6 @@ nav ul a:hover {
   transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s; */
 /* } */
 
-/* Hamburger menbu text */
-.header__menu a {
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ddd;
-  transition: 0.5s;
-}
-
-.header__menu li {
-  border-top: 1px solid rgb(75, 75, 75);
-  padding: 15px 0;
-  margin: 0 54px;
-  transition: 0.5s;
-}
-
 /* .header__menu-btn:checked ~ .header__menu a, */
 /* .header__menu-btn:checked ~ .header__menu li { */
 /* opacity: 1;
