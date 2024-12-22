@@ -130,12 +130,14 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #666;
 }
 
 .header__menu-list li {
   display: block;
   width: 100%;
   font-size: 1rem;
+  text-align: center;
 }
 
 .header__menu-list a {
