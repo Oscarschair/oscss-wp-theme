@@ -143,8 +143,8 @@ main {
   color: #007bff;
 }
 
-nav {
-  background-color: transparent !important;
+.header__menu {
+  background-color: #979797 !important;
   box-shadow: none !important;
   height: auto;
 }
@@ -643,6 +643,7 @@ body {
 
   .header__menu {
     display: block !important;
+    background-color: transparent !important;
   }
 
   .header__menu-toggle {
@@ -702,5 +703,9 @@ body {
   .single-post__title {
     font-size: 2.5rem;
     font-weight: 600;
+  }
+
+  .single-post__image {
+    width: 100%;
   }
 }
