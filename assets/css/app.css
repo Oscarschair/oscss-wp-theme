@@ -644,7 +644,6 @@ body {
 
   .header__menu {
     display: block !important;
-    background-color: transparent !important;
   }
 
   .header__menu-toggle {
@@ -655,6 +654,7 @@ body {
     position: relative;
     display: flex;
     justify-content: flex-end;
+    background-color: transparent;
   }
 
   .footer__left,
