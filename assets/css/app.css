@@ -68,6 +68,10 @@ main {
 
 .header__menu {
   display: none;
+  box-shadow: none !important;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .header__menu.active {
@@ -119,8 +123,7 @@ main {
 
 .header__menu-list {
   position: fixed;
-  z-index: 1000;
-
+  z-index: relative;
   width: 100%;
   /* メニューを右揃えに */
   gap: 15px;
@@ -130,6 +133,8 @@ main {
 }
 
 .header__menu-list li {
+  display: block;
+  width: 100%;
   font-size: 1rem;
 }
 
@@ -141,12 +146,6 @@ main {
 
 .header__menu-list a:hover {
   color: #007bff;
-}
-
-.header__menu {
-  background-color: #979797 !important;
-  box-shadow: none !important;
-  height: auto;
 }
 
 nav ul a:hover {
