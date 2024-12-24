@@ -68,10 +68,14 @@
             </h1>
 
             <div class="header__right">
-                <button class="header__menu-toggle" aria-label="メニューを開く" onclick="toggleMenu()">
-                    <span></span>
+                <button class="header__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#top-navigation-bar-47865" aria-controls="#top-navigation-bar-47865"
+                    aria-expanded="true" aria-label="トグルナビゲーション">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <nav class="header__menu">
+                <nav class="header__menu collapse">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header_menu',

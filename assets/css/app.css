@@ -67,82 +67,49 @@ main {
 }
 
 .header__menu {
-  display: none;
-  box-shadow: none !important;
-  position: absolute;
-  left: 0;
-  top: 0;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.header__toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
   background-color: transparent;
-  list-style: none;
-
-  width: 100%;
-  height: auto;
-  /* margin-top: 52px; */
-  padding: 0 0 10px 0;
-  /* clear: both; */
-  /* background: var(--background-navbar); */
-  /* transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s; */
-  /* transform: scale(1, 0); */
-  /* transform-origin: top; */
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  color: rgba(0, 0, 0, 0.55);
+  border-color: transparent;
 }
 
-.header__menu.active {
-  display: block;
+.collapse:not(.active) {
+  display: none;
 }
 
-.header__menu-toggle {
-  position: absolute; /* 親要素に対して位置を指定 */
-  top: 45px; /* 上端からの距離を調整 */
-  right: 35px; /* 右端からの距離を調整 */
-
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  display: block;
-  width: 30px; /* ボタンの幅 */
-  height: 24px; /* 三本線全体の高さ */
+@media (prefers-reduced-motion: reduce) {
+  .header__toggler {
+    transition: none;
+  }
 }
 
-/* 三本線の中央のライン */
-.header__menu-toggle::before,
-.header__menu-toggle::after,
-.header__menu-toggle span {
-  content: "";
-  position: absolute;
-  background-color: #333; /* ラインの色 */
-  width: 100%;
-  height: 3px; /* ラインの太さ */
-  left: 0;
-  border-radius: 2px; /* ラインの角を少し丸める */
+.header__toggler:hover {
+  text-decoration: none;
 }
 
-/* 中央のライン */
-.header__menu-toggle span {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* 上のライン */
-.header__menu-toggle::before {
-  top: 0;
-}
-
-/* 下のライン */
-.header__menu-toggle::after {
-  bottom: 0;
+.header__toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0;
 }
 
 .header__menu-list {
-  position: fixed;
-  z-index: relative;
-  width: 100%;
-  /* メニューを右揃えに */
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: #666;
 }
 
 .header__menu-list li {
