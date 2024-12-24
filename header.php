@@ -68,7 +68,7 @@
             </h1>
 
             <div class="header__right">
-                <button class="header__toggler" type="button" data-bs-toggle="collapse"
+                <button class="header__toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#top-navigation-bar-47865" aria-controls="#top-navigation-bar-47865"
                     aria-expanded="true" aria-label="トグルナビゲーション">
                     <span class="icon-bar"></span>
