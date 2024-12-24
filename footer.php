@@ -42,7 +42,7 @@
             </ul>
         </div>
         <div class="footer__right">
-            <nav class="footer__menu">
+            <div class="footer__menu">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'footer_menu',
@@ -51,7 +51,7 @@
                     'fallback_cb' => false,
                 ));
                 ?>
-            </nav>
+            </div>
         </div>
     </div>
 

@@ -580,6 +580,10 @@ body {
     background-color: transparent;
   }
 
+  .header__menu-list a {
+    padding: 0;
+  }
+
   .footer__left,
   .footer__right {
     flex-basis: 50%;
@@ -597,11 +601,7 @@ body {
   .footer__menu-list {
     flex-direction: row;
     justify-content: flex-end;
-    /* justify-content: flex-end; */
-    /* margin: 0; */
-    /* padding: 0; */
-    /* display: block; */
-    gap: 15px;
+    gap: 60px;
   }
 
   .footer__menu-list a {
