@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // トグルボタンにクリックイベントを追加
   btnToggle.addEventListener("click", () => {
     btnToggle.classList.toggle("collapsed");
-    menu.classList.toggle("collapse");
+    menu.classList.toggle("active");
   });
 });

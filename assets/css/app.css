@@ -67,6 +67,7 @@ main {
 }
 
 .header__menu {
+  display: flex;
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
