@@ -1,7 +1,7 @@
 function toggleMenu() {
-  const btn_toggle = document.querySelector(".header__menu-toggle");
-  btn_toggle.classList.toggle("active");
+  const btn_toggle = document.querySelector(".header__toggler");
+  btn_toggle.classList.toggle("collapsed");
 
   const menu = document.querySelector(".header__menu");
-  menu.classList.toggle("active");
+  menu.classList.toggle("collapse");
 }
