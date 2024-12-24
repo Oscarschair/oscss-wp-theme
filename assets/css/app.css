@@ -104,6 +104,46 @@ main {
   box-shadow: 0 0 0 0;
 }
 
+.header__toggler .icon-bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  transition: all 0.2s;
+  background-color: #000;
+}
+.header__toggler .icon-bar:first-of-type {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.header__toggler .icon-bar:nth-of-type(2) {
+  opacity: 0;
+}
+.header__toggler .icon-bar:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.header__toggler .icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+.header__toggler.collapsed .icon-bar:first-of-type {
+  transform: rotate(0);
+}
+.header__toggler.collapsed .icon-bar:nth-of-type(2) {
+  opacity: 1;
+}
+.header__toggler.collapsed .icon-bar:nth-of-type(3) {
+  transform: rotate(0);
+}
+.header__toggler:hover .icon-bar {
+  background-color: var(--bs-primary);
+}
+
+.transparency-enabled:not(.transparency-temporarily-disabled)
+  .header__toggler
+  .icon-bar {
+  background-color: #fff;
+}
+
 .header__menu-list {
   display: flex;
   flex-direction: column;
