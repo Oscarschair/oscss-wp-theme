@@ -1,7 +1,13 @@
-function toggleMenu() {
-  const btn_toggle = document.querySelector(".header__toggler");
-  btn_toggle.classList.toggle("collapsed");
+document.addEventListener("DOMContentLoaded", () => {
+  // トグルボタンを取得
+  const btnToggle = document.querySelector(".header__toggler");
 
+  // メニューを取得
   const menu = document.querySelector(".header__menu");
-  menu.classList.toggle("collapse");
-}
+
+  // トグルボタンにクリックイベントを追加
+  btnToggle.addEventListener("click", () => {
+    btnToggle.classList.toggle("collapsed");
+    menu.classList.toggle("collapse");
+  });
+});
