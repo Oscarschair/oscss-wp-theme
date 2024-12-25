@@ -610,6 +610,10 @@ body {
     padding: 0;
   }
 
+  .header__toggler {
+    display: none;
+  }
+
   .footer__left,
   .footer__right {
     flex-basis: 50%;
