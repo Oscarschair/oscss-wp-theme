@@ -587,6 +587,7 @@ body {
 
   .header__menu-list {
     position: relative;
+    flex-direction: row;
     /* display: inline-flex; */
     justify-content: flex-end;
     width: auto;
