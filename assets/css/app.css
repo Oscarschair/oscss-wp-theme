@@ -578,9 +578,6 @@ body {
   }
 
   .header__menu {
-    display: flex;
-
-    display: block !important;
     position: relative;
   }
 
