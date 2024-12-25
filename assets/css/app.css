@@ -103,6 +103,7 @@ main {
   text-decoration: none;
   outline: 0;
   box-shadow: 0 0 0 0;
+  background-color: transparent;
 }
 
 .header__toggler .icon-bar {
@@ -134,9 +135,6 @@ main {
 }
 .header__toggler.collapsed .icon-bar:nth-of-type(3) {
   transform: rotate(0);
-}
-.header__toggler:hover .icon-bar {
-  background-color: var(--bs-primary);
 }
 
 .transparency-enabled:not(.transparency-temporarily-disabled)
