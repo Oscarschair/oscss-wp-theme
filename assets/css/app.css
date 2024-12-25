@@ -74,10 +74,14 @@ main {
   background-color: #fff; /* 必要に応じて背景色を設定 */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* メニューに影を追加 */
   z-index: 999; /* ヘッダーのすぐ下に表示 */
-  height: auto;
+  height: 0;
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+}
+
+.header__menu.active {
+  height: auto;
 }
 
 .header__toggler {
