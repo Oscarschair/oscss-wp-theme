@@ -78,6 +78,7 @@ main {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  transition: height 0.3s linear;
 }
 
 .header__menu.active {
