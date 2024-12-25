@@ -582,7 +582,7 @@ body {
   }
 
   .header__menu.collapse {
-    /* display: flex; */
+    display: flex;
   }
 
   .header__menu-list {
