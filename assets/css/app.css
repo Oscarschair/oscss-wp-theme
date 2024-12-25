@@ -177,7 +177,6 @@ main {
 
 nav ul a:hover {
   background-color: transparent !important;
-  border-bottom: 4px solid !important;
 }
 
 /* Hamburger menu button */
