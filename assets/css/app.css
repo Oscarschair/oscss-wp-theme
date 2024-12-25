@@ -587,9 +587,13 @@ body {
 
   .header__menu-list {
     position: relative;
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
+    width: auto;
     background-color: transparent;
+  }
+
+  .header__menu-list li {
   }
 
   .header__menu-list a {
