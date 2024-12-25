@@ -76,7 +76,7 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* メニューに影を追加 */
   /* display: none; 初期状態では非表示 */
   z-index: 999; /* ヘッダーのすぐ下に表示 */
-
+  height: auto;
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
