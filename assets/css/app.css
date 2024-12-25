@@ -584,8 +584,8 @@ body {
     position: relative;
   }
 
-  .header__menu-toggle {
-    display: none;
+  .header__menu.collapse {
+    display: flex;
   }
 
   .header__menu-list {
